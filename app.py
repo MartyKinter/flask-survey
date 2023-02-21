@@ -8,7 +8,7 @@ RESPONSES_LIST = "responses"
 
 @app.route("/")
 def show_survey_start():
-    """Display select survey"""
+    """Display survey start page"""
     return render_template("survey_start.html", survey = survey)
 
 @app.route("/begin", methods=["POST"])
